@@ -1,0 +1,125 @@
+/* General Style */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Style */
+h1 {
+    background-color: #af6b95;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Navigation */
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    background-color: #333;
+    gap: 20px;
+}
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.nav-links a:hover {
+    color: #c44b92;
+}
+
+/* Hero Section */ 
+.hero {
+    background-size: cover;
+    background-position: center;
+    color: rgb(236, 47, 104);
+    text-align: center;
+    padding: 100px 20px;
+    text-decoration: underline;
+}
+.hero h2 {
+    font-size: 2.5em;
+    color: #f67280;
+}
+
+/* Services Section */
+.services {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    padding: 50px 20px;
+    flex-wrap: wrap;
+}
+.service {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    flex: 1;
+    min-width: 250px;
+    transition: transform 0.3s;
+}
+.service:hover {
+    transform: translateY(-5px);
+}
+.service h3 {
+    color: #f67280;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Update CTA Section */
+.update-cta {
+    background-color: #fff3e0;
+    padding: 30px 20px;
+    text-align: center;
+}
+.update-cta input {
+    padding: 10px;
+    width: 250px;
+    max-width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.update-cta button {
+    padding: 10px 20px;
+    background-color: #f67280;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.update-cta button:hover {
+    background-color: #c44b92;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    .nav-links {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .services {
+        flex-direction: column;
+        align-items: center;
+    }
+    .update-cta button {
+        display: block;
+        margin: 15px auto 0;
+    }
+}
