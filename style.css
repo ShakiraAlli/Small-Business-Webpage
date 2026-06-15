@@ -40,6 +40,10 @@ h1 {
     text-align: center;
     padding: 100px 20px;
     text-decoration: underline;
+    background-color: rgba(255, 255, 255, 0.8);
+    background-blend-mode: lighten;
+    background-image: url('https://media.hswstatic.com/eyJidWNrZXQiOiJjb250ZW50Lmhzd3N0YXRpYy5jb20iLCJrZXkiOiJnaWZcL2Rlc3NlcnRzLXVwZGF0ZS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjgyOH19fQ==');
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
 .hero h2 {
     font-size: 2.5em;
