@@ -1,10 +1,17 @@
 /* General Style */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:wght@400;600&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Open Sans', Arial, sans-serif;
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
 }
+
+h1, h2, h3 {
+    font-family: "Playfair Display", serif;
+}
+
 
 /* Header Style */
 h1 {
@@ -12,6 +19,7 @@ h1 {
     color: white;
     padding: 20px 0;
     text-align: center;
+    border-bottom: 4px solid #f4d19b;
 }
 
 /* Navigation */
@@ -41,13 +49,28 @@ h1 {
     padding: 100px 20px;
     text-decoration: underline;
     background-color: rgba(255, 255, 255, 0.8);
-    background-blend-mode: lighten;
     background-image: url('https://media.hswstatic.com/eyJidWNrZXQiOiJjb250ZW50Lmhzd3N0YXRpYy5jb20iLCJrZXkiOiJnaWZcL2Rlc3NlcnRzLXVwZGF0ZS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjgyOH19fQ==');
+    background-blend-mode: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1));
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    background-repeat: no-repeat;
 }
 .hero h2 {
-    font-size: 2.5em;
-    color: #f67280;
+    font-size: 3rem;
+    color: White;
+    text-shadow: 3px 3px 8px rgba(0,0,0,0.5);
+    margin-bottom: 25px;
+}
+
+.hero p {
+    color: white;
+    font-size: 1.2rem;
+    max-width: 900px;
+    margin: auto;
+    text-shadow: 2px 2px 6px rgba(0,0,0,.8);
+    line-height: 1.5;
+    background: rgba(0,0,0,.45);
+    padding: 20px;
+    border-radius: 12px;
 }
 
 /* Services Section */
@@ -57,6 +80,7 @@ h1 {
     justify-content: space-around;
     padding: 50px 20px;
     flex-wrap: wrap;
+    text-align: center;
 }
 .service {
     background-color: white;
@@ -66,9 +90,24 @@ h1 {
     flex: 1;
     min-width: 250px;
     transition: transform 0.3s;
+    animation: fadeUp 1s ease-in-out;
 }
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .service:hover {
     transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 .service h3 {
     color: #f67280;
